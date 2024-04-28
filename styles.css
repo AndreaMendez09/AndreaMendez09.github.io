@@ -257,6 +257,8 @@ main {
 
 .about__name {
   color: var(--clr-primary);
+  z-index: 1;
+  position: relative
 }
 
 .about__role {
@@ -283,8 +285,6 @@ main {
 
 .about.left {
   width: 77%;
-  z-index: 1;
-  position: relative
 }
 
 .about.right {
@@ -304,7 +304,7 @@ main {
 }
 
 
-.projects__grid {
+/*.projects__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
@@ -344,7 +344,7 @@ main {
 
 .project .link--icon {
   margin-left: 0.5em;
-}
+}*/
 
 .skills__list {
   max-width: 450px;
@@ -384,6 +384,84 @@ main {
   font-size: 1.8rem;
   transition: transform 0.2s ease-in-out;
 }
+
+.main-container {
+    margin-top: 3em;
+}
+
+.projects__btn .btn__line {
+    margin-right: 1em;
+}
+
+.projects__list-item {
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.projects__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__content.left {
+    text-align: left;
+}
+
+.projects__content.right {
+    text-align: right;
+}
+
+.projects__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.projects__list-item-count {
+    display: none;
+}
+
+.projects__list-item-img {
+    max-width: 70%;
+    height: auto;
+}
+
+.projects__title-text-divider {
+    height: 5px;
+    width: 3rem;
+    background: rgba(var(--themeColor), 1);
+    margin-bottom: 3rem;
+    border-radius: 100px;
+}
+
+.projects__list-item-text-primary {
+    margin-bottom: 4rem;
+}
+
+.projects__list-item-text-primary span {
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.projects__list-item-text-primary span:last-child {
+    margin-bottom: 0;
+}
+
+.projects__btn-theme {
+    margin-right: 2rem;
+}
+
+.projects__list-item--inv {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.projects__list-item--inv .projects__list-item-img {
+    margin-right: 20px;
+}
+
+
 
 @media (max-width: 600px) {
   .header {

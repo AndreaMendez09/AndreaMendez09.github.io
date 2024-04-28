@@ -1,236 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Portfolio"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+            rel="stylesheet"
     />
     <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
+            src="https://kit.fontawesome.com/fa62c117c7.js"
+            crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
     <title>Andrea Méndez - Portfolio</title>
-  </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
+</head>
+<body class="light" id="top">
+<header class="header center">
+    <h3>
         <a href="https://rajshekhar26.github.io/cleanfolio-minimal" class="link"
-          >AM.</a
+        >AM.</a
         >
-      </h3>
+    </h3>
 
-      <nav class="nav center">
+    <nav class="nav center">
         <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">proyectos</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">habilidades</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">contacto</a>
-          </li>
+            <li class="nav__list-item">
+                <a class="link link--nav" href="#projects">proyectos</a>
+            </li>
+            <li class="nav__list-item">
+                <a class="link link--nav" href="#skills">habilidades</a>
+            </li>
+            <li class="nav__list-item">
+                <a class="link link--nav" href="#contact">contacto</a>
+            </li>
         </ul>
 
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+            <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
         </button>
 
         <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
+                type="button"
+                aria-label="toggle navigation"
+                class="btn btn--icon nav__hamburger"
         >
-          <i aria-hidden="true" class="fas fa-bars"></i>
+            <i aria-hidden="true" class="fas fa-bars"></i>
         </button>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <main>
-      <!-- About -->
-      <div class="about-container">
+<main>
+    <!-- About -->
+    <div class="about-container">
         <div class="about left">
-          <h1>Hola, soy <span class="about__name">Andrea Méndez.</span></h1>
-          <h2 class="about__role">Una desArrolladora Back-end.</h2>
-          <p class="about__desc">
-            Actualmente me encuentro mejorando mis habilidades tecnologicas relacionadas sobretodo con el mundo del testing
-            y con el mundo de la inteligencia artificial
-          </p>
+            <h1>Hola, soy <span class="about__name">Andrea Méndez.</span></h1>
+            <h2 class="about__role">Una desArrolladora Back-end.</h2>
+            <p class="about__desc">
+                Actualmente me encuentro mejorando mis habilidades tecnologicas relacionadas sobretodo con el mundo del
+                testing
+                y con el mundo de la inteligencia artificial
+            </p>
 
-          <div class="about__contact center">
-            <a href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing" target="_blank">
-              <span class="btn btn--outline">Resume</span>
-            </a>
+            <div class="about__contact center">
+                <a href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing"
+                   target="_blank">
+                    <span class="btn btn--outline">Resume</span>
+                </a>
 
-            <a
-                    href="https://github.com/AndreaMendez09"
-                    aria-label="github"
-                    class="link link--icon"
-                    target="_blank"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
+                <a
+                        href="https://github.com/AndreaMendez09"
+                        aria-label="github"
+                        class="link link--icon"
+                        target="_blank"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
 
-            <a
-                    href="https://www.linkedin.com/in/andrea-mendez-61302816a/"
-                    aria-label="linkedin"
-                    class="link link--icon"
-                    target="_blank"
-            >
-              <i aria-hidden="true" class="fab fa-linkedin"></i>
-            </a>
-          </div>
+                <a
+                        href="https://www.linkedin.com/in/andrea-mendez-61302816a/"
+                        aria-label="linkedin"
+                        class="link link--icon"
+                        target="_blank"
+                >
+                    <i aria-hidden="true" class="fab fa-linkedin"></i>
+                </a>
+            </div>
         </div>
         <div class="about right">
-          <img src="images/Telecommuting-cuate.png" class="about__image" alt="A">
+            <img src="images/Telecommuting-cuate.png" class="about__image" alt="A">
         </div>
-      </div>
+    </div>
 
-      <!-- Projects -->
-      <section id="projects" class="section projects">
+    <!-- Projects new -->
+    <section id="projects" class="section projects">
+        <div class="main-container">
+            <h2 class="section__title">Projects</h2>
+            <div class="main-section__content">
+                <div class="projects__list">
+                    <div class="projects__list-item">
+                            <div class="projects__content right">
+                                <img src="./images/recompensas-08.webp" alt="Project"
+                                     class="projects__list-item-img"/>
+                            </div>
+                            <div class="projects__content left">
+                                <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                                    Bnext - Sistema de recompensas
+                                </h3>
+
+                                <p class="text-primary projects__list-item-text-primary">
+                                    <span>
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                      Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                                      labore magni saepe veritatis voluptatum alias fugit.
+                                      Explicabo ducimus
+                                    </span>
+                                    <span>
+                                      sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                                      sit amet, consectetur adipisicing elit
+                                    </span>
+                                </p>
+                                <div class="projects__btn center">
+                                    <a class="btn__line" href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing"
+                                       target="_blank">
+                                        <span class="btn btn--outline">Live link</span>
+                                    </a>
+                                    <a class="btn__line" href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing"
+                                       target="_blank">
+                                        <span class="btn btn--outline">Code link</span>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="projects__list-item projects__list-item--inv">
+                        <div class="projects__content">
+                            <img src="./images/app-tarjeta-Correos.webp" alt="Project"
+                                 class="projects__list-item-img"/>
+                        </div>
+                        <div class="projects__content">
+                            <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                                Correos prepago
+                            </h3>
+
+                            <p class="text-primary projects__list-item-text-primary">
+                                    <span>
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                      Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                                      labore magni saepe veritatis voluptatum alias fugit.
+                                      Explicabo ducimus
+                                    </span>
+                                <span>
+                                      sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                                      sit amet, consectetur adipisicing elit
+                                    </span>
+                            </p>
+                            <div class="projects__btn center">
+                                <a class="btn__line" href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing"
+                                   target="_blank">
+                                    <span class="btn btn--outline">Live link</span>
+                                </a>
+                                <a class="btn__line" href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing"
+                                   target="_blank">
+                                    <span class="btn btn--outline">Code link</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__list-item">
+                        <div class="projects__content right">
+                            <img src="./images/recompensas-08.webp" alt="Project"
+                                 class="projects__list-item-img"/>
+                        </div>
+                        <div class="projects__content left">
+                            <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                                Bnext - Sistema de recompensas
+                            </h3>
+
+                            <p class="text-primary projects__list-item-text-primary">
+                                    <span>
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                      Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                                      labore magni saepe veritatis voluptatum alias fugit.
+                                      Explicabo ducimus
+                                    </span>
+                                <span>
+                                      sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                                      sit amet, consectetur adipisicing elit
+                                    </span>
+                            </p>
+                            <div class="projects__btn center">
+                                <a class="btn__line" href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing"
+                                   target="_blank">
+                                    <span class="btn btn--outline">Live link</span>
+                                </a>
+                                <a class="btn__line" href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing"
+                                   target="_blank">
+                                    <span class="btn btn--outline">Code link</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__list-item projects__list-item--inv">
+                        <div class="projects__content">
+                            <img src="./images/app-tarjeta-Correos.webp" alt="Project"
+                                 class="projects__list-item-img"/>
+                        </div>
+                        <div class="projects__content">
+                            <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                                Correos prepago
+                            </h3>
+
+                            <p class="text-primary projects__list-item-text-primary">
+                                    <span>
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                      Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                                      labore magni saepe veritatis voluptatum alias fugit.
+                                      Explicabo ducimus
+                                    </span>
+                                <span>
+                                      sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                                      sit amet, consectetur adipisicing elit
+                                    </span>
+                            </p>
+                            <div class="projects__btn center">
+                                <a class="btn__line" href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing"
+                                   target="_blank">
+                                    <span class="btn btn--outline">Live link</span>
+                                </a>
+                                <a class="btn__line" href="https://drive.google.com/file/d/1bu4yzjbfuwO7c8K2SWZcGYw1Or73Dwau/view?usp=sharing"
+                                   target="_blank">
+                                    <span class="btn btn--outline">Code link</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects
+    <section id="projects2" class="section projects">
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
-          <div class="project">
-            <h3>Project 1</h3>
-            <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
-            </ul>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p class="project__description">
+                    Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+                    sapiente debitis labore sed ipsam Mollitia repellat illum quod
+                    unde beatae Quis
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">SASS</li>
+                    <li class="project__stack-item">TypeScript</li>
+                    <li class="project__stack-item">React</li>
+                </ul>
 
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
+                <a
+                        href="https://github.com"
+                        aria-label="source code"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                        href="https://example.com"
+                        aria-label="live preview"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
 
-          <div class="project">
-            <h3>Project 2</h3>
-            <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
-            </ul>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p class="project__description">
+                    Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+                    sapiente debitis labore sed ipsam Mollitia repellat illum quod
+                    unde beatae Quis
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">SASS</li>
+                    <li class="project__stack-item">TypeScript</li>
+                    <li class="project__stack-item">React</li>
+                </ul>
 
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
+                <a
+                        href="https://github.com"
+                        aria-label="source code"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                        href="https://example.com"
+                        aria-label="live preview"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
 
-          <div class="project">
-            <h3>Project 3</h3>
-            <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
-            </ul>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p class="project__description">
+                    Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+                    sapiente debitis labore sed ipsam Mollitia repellat illum quod
+                    unde beatae Quis
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">SASS</li>
+                    <li class="project__stack-item">TypeScript</li>
+                    <li class="project__stack-item">React</li>
+                </ul>
 
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
+                <a
+                        href="https://github.com"
+                        aria-label="source code"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                        href="https://example.com"
+                        aria-label="live preview"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
         </div>
-      </section>
+    </section>-->
 
-      <!-- Skills -->
-      <section class="section skills" id="skills">
+    <!-- Skills -->
+    <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">SCSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">Redux</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Material UI</li>
-          <li class="skills__list-item btn btn--plain">Jest</li>
-          <li class="skills__list-item btn btn--plain">Enzyme</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
+            <li class="skills__list-item btn btn--plain">HTML</li>
+            <li class="skills__list-item btn btn--plain">CSS</li>
+            <li class="skills__list-item btn btn--plain">SCSS</li>
+            <li class="skills__list-item btn btn--plain">JavaScript</li>
+            <li class="skills__list-item btn btn--plain">TypeScript</li>
+            <li class="skills__list-item btn btn--plain">React</li>
+            <li class="skills__list-item btn btn--plain">Redux</li>
+            <li class="skills__list-item btn btn--plain">Git</li>
+            <li class="skills__list-item btn btn--plain">Material UI</li>
+            <li class="skills__list-item btn btn--plain">Jest</li>
+            <li class="skills__list-item btn btn--plain">Enzyme</li>
+            <li class="skills__list-item btn btn--plain">CI/CD</li>
         </ul>
-      </section>
+    </section>
 
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
         <a href="mailto:rjshekhar.official@gmail.com">
-          <span class="btn btn--outline">Email me</span>
+            <span class="btn btn--outline">Email me</span>
         </a>
-      </section>
-    </main>
+    </section>
+</main>
 
-    <footer class="footer">
-      <a
-        href="https://github.com/rajshekhar26/cleanfolio-minimal"
-        class="link footer__link"
-      >
+<footer class="footer">
+    <a
+            href="https://github.com/rajshekhar26/cleanfolio-minimal"
+            class="link footer__link"
+    >
         Created By Raj Shekhar
-      </a>
-    </footer>
+    </a>
+</footer>
 
-    <div class="scroll-container">
+<div class="scroll-container">
     <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
+        <a aria-label="Scroll up" href="#top">
+            <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
     </div>
-    </div>
+</div>
 
-    <script src="./script.js"></script>
-  </body>
+<script src="./script.js"></script>
+</body>
 </html>
