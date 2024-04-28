@@ -31,7 +31,7 @@ body {
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  --clr-primary: #794080;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -40,7 +40,7 @@ body {
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
+  --clr-primary: #B05EBB;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -280,6 +280,29 @@ main {
 .about .btn--outline {
   margin-right: 1em;
 }
+
+.about.left {
+  width: 77%;
+  z-index: 1;
+  position: relative
+}
+
+.about.right {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.about__image {
+  max-width: 100%;
+}
+
+.about-container {
+  position: relative;
+}
+
 
 .projects__grid {
   max-width: 1100px;
