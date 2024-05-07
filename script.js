@@ -61,3 +61,17 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+function closePopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
+
+function togglePopup() {
+    var popup = document.getElementById('popup');
+    if (popup.style.display === 'block') {
+        popup.style.display = 'none';
+    } else {
+        popup.style.display = 'block';
+    }
+}

@@ -148,6 +148,7 @@ button {
   font-size: 0.9rem;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
+  border-radius: 8px;
 }
 
 .btn--outline {
@@ -664,6 +665,84 @@ Main components
   border-right: 7px solid #333C42;
 }
 
+.popup {
+    position: fixed;
+    top: 50%; /* Posición vertical en el centro de la pantalla */
+    right: 20px; /* Posición en la derecha de la página */
+    transform: translateY(-50%); /* Centra verticalmente el elemento */
+    background-color: #fff;
+    width: 350px; /* Ancho del popup */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Asegura que el popup esté en la parte superior */
+}
+
+.popup-header {
+    background-color: var(--clr-primary);
+    color: #fff; /* Color del texto del encabezado */
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-title {
+    font-weight: bold;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.popup-content h2 {
+    margin-bottom: 10px;
+}
+
+.popup-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-content li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .popup-toggle {
+        display: block;
+        background-color: #0078d4;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+
+    .popup {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
@@ -678,6 +757,19 @@ Main components
     font-size: 0.875rem;
   }
 }
+
+.cd-image {
+    width:8%
+}
+
+.content-flex {
+    width:49%;
+    float:left;
+    height:100%;
+    margin-right:2%;
+}
+.content-flex:last-child {margin-right:0;  }
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     color: white;
@@ -695,8 +787,8 @@ Main components
   .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
-    left: 122%;
-    top: 6px;
+    left: 135%;
+    top: 25px;
     font-size: 16px;
     font-size: 1rem;
   }
@@ -715,7 +807,7 @@ Main components
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
-    right: 122%;
+    right: 135%;
     text-align: right;
   }
 }
