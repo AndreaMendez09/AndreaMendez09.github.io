@@ -667,23 +667,23 @@ Main components
 
 .popup {
     position: fixed;
-    top: 50%; /* Posición vertical en el centro de la pantalla */
-    right: 20px; /* Posición en la derecha de la página */
-    transform: translateY(-50%); /* Centra verticalmente el elemento */
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
     background-color: #fff;
-    width: 350px; /* Ancho del popup */
+    width: 350px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 999; /* Asegura que el popup esté en la parte superior */
+    z-index: 999;
+    border-color: var(--clr-primary);
 }
 
 .popup-header {
     background-color: var(--clr-primary);
     color: #fff; /* Color del texto del encabezado */
     padding: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -691,6 +691,10 @@ Main components
 
 .popup-title {
     font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 13%;
 }
 
 .close-btn {

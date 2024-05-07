@@ -13,3 +13,6 @@ K
 images/Responsive-cuate.svg,f\f\ff22c27a1bda200fcd1dc3db526d82fa222be042
 9
 	script.js,3\1\313d6864fa48b411d082f7692efd0c0892788fc4
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
