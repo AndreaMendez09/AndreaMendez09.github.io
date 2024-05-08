@@ -726,26 +726,7 @@ Main components
     margin-bottom: 5px;
 }
 
-@media screen and (max-width: 768px) {
-    .popup-toggle {
-        display: block;
-        background-color: #0078d4;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        border-radius: 5px;
-        cursor: pointer;
-        position: fixed;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        z-index: 999;
-    }
 
-    .popup {
-        display: none;
-    }
-}
 
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -814,4 +795,32 @@ Main components
     right: 135%;
     text-align: right;
   }
+}
+
+
+
+.call-back {
+  position: relative;
+
+  .btn-call {
+    position: fixed;
+    z-index: 999;
+    background: var(--clr-primary);
+    padding: 20px;
+    border-radius: 15px 15px 00 00;
+    color: var(--clr-bg);
+    font-size: 20px;
+    font-weight: 500;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    top: 50%;
+    right: -3%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+    .btn-call {
+        right: -12%;
+    }
 }
