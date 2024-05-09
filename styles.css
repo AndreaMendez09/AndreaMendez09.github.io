@@ -7,7 +7,6 @@
   margin: 0;
   border: 0;
   outline: 0;
-  /*background-color: inherit;*/
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -28,6 +27,7 @@ body {
 
 .light {
   --clr-bg: #fcfcfc;
+  --clr-bg-nav: rgb(252, 252, 252, 0.6);
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
@@ -38,6 +38,7 @@ body {
 
 .dark {
   --clr-bg: #23283e;
+  --clr-bg-nav: rgb(35, 40, 62, 0.6);
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
@@ -453,6 +454,7 @@ main {
 
   .display-nav-list {
     width: 100%;
+    background-color: var(--clr-bg-nav);
   }
 
   .nav__list-item {
