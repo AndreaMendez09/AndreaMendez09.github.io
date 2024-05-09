@@ -448,6 +448,7 @@ main {
     width: 0;
     overflow: hidden;
     transition: width 0.2s ease-in-out;
+    z-index: 700;
   }
 
   .display-nav-list {
@@ -743,6 +744,10 @@ Main components
   .cd-date {
     margin-top: 5px;
     color: #fcfcfc;
+  }
+
+  .popup {
+    display: none;
   }
 }
 
