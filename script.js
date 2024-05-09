@@ -69,14 +69,5 @@ function closePopup() {
 
 function togglePopup() {
     var popup = document.getElementById('popup');
-    if (popup.style.display === 'block') {
-        popup.style.display = 'none';
-    } else {
-        popup.style.display = 'block';
-    }
+    popup.style.display = 'block';
 }
-
-$('.btn-call').on('click', function() {
-  $('.call-open').toggleClass('open-call');
-  $('.call-open form').delay(500).show(0);
-});

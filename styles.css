@@ -678,12 +678,12 @@ Main components
 
 .popup-header {
     background-color: var(--clr-primary);
-    color: #fff; /* Color del texto del encabezado */
+    color: #fff;
     padding: 10px;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .popup-title {
