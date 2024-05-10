@@ -139,7 +139,7 @@ button {
 
 .link--icon {
   color: var(--clr-fg);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .btn {
@@ -147,7 +147,6 @@ button {
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
-  text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
   border-radius: 8px;
 }
@@ -670,7 +669,7 @@ Main components
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    background-color: #fff;
+    background-color: var(--clr-bg);
     width: 350px;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -681,7 +680,7 @@ Main components
 
 .popup-header {
     background-color: var(--clr-primary);
-    color: #fff;
+    color: var(--clr-bg);
     padding: 10px;
     border-radius: 15px;
     display: flex;
