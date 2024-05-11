@@ -818,7 +818,16 @@ font-size: 0.875rem;
     text-align: right;
   }
 }
-
+@media screen and (max-width: 768px) {
+    .btn-call {
+       border-radius: 15px 15px 0px 0px !important;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }
+}
 
 
 .call-back {
@@ -829,20 +838,23 @@ font-size: 0.875rem;
     z-index: 999;
     background: var(--clr-primary);
     padding: 20px;
-    border-radius: 15px 15px 00 00;
+    border-radius: 15px 0px 0px 15px ;
     color: var(--clr-bg);
     font-size: 20px;
     font-weight: 500;
-    transform: rotate(-90deg);
     cursor: pointer;
     top: 50%;
-    right: -3%;
+    right: 0;
+
+  -webkit-transform-origin: 60% 0%;
+  -moz-transform-origin: 60% 0%;
+  -ms-transform-origin: 60% 0%;
+  -o-transform-origin: 60% 0%;
+  transform-origin: 60% 0%;
+
+
   }
 
 }
 
-@media screen and (max-width: 768px) {
-    .btn-call {
-        right: -12%;
-    }
-}
+
