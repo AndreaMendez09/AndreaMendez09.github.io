@@ -145,8 +145,8 @@ button {
 .btn {
   display: block;
   padding: 0.8em 1.4em;
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-weight: 560;
+  font-size: 1.1rem;
   transition: transform 0.2s ease-in-out;
   border-radius: 8px;
 }
@@ -312,7 +312,6 @@ main {
 }
 
 .skills__list {
-  max-width: 80%;
   width: 95%;
   margin: 0 auto;
   display: flex;
@@ -693,7 +692,7 @@ Main components
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    margin-left: 13%;
+    margin: 0 auto;
 }
 
 .close-btn {
@@ -828,33 +827,28 @@ font-size: 0.875rem;
       transform: rotate(-90deg);
     }
 }
-
-
 .call-back {
   position: relative;
+}
 
-  .btn-call {
-    position: fixed;
-    z-index: 999;
-    background: var(--clr-primary);
-    padding: 20px;
-    border-radius: 15px 0px 0px 15px ;
-    color: var(--clr-bg);
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    top: 50%;
-    right: 0;
+.call-back .btn-call {
+   position: fixed;
+   z-index: 999;
+   background: var(--clr-primary);
+   padding: 20px;
+   border-radius: 15px 0px 0px 15px ;
+   color: var(--clr-bg);
+   font-size: 20px;
+   font-weight: 500;
+   cursor: pointer;
+   top: 50%;
+   right: 0;
 
   -webkit-transform-origin: 60% 0%;
   -moz-transform-origin: 60% 0%;
   -ms-transform-origin: 60% 0%;
   -o-transform-origin: 60% 0%;
   transform-origin: 60% 0%;
-
-
-  }
-
 }
 
 
